@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "113347707795",
+    "firebase_url": "https://ourapp-fe66e.firebaseio.com",
+    "project_id": "ourapp-fe66e",
+    "storage_bucket": "ourapp-fe66e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113347707795:android:0bf065728cfcf90764de66",
+        "android_client_info": {
+          "package_name": "com.example.ourapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113347707795-gubmtacjg54s9id15l33kj0k01s0iab1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ourapp",
+            "certificate_hash": "30fd6955ebb4d58437a20396b23cfc6b6050995b"
+          }
+        },
+        {
+          "client_id": "113347707795-3riolidt435tftuojqlafljjt9j77kmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Md4HIBO5gApYgJvCWzjVfYDeEiIn57I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113347707795-3riolidt435tftuojqlafljjt9j77kmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113347707795:android:628822ba25deea2e64de66",
+        "android_client_info": {
+          "package_name": "edu.example.ac3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113347707795-3riolidt435tftuojqlafljjt9j77kmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Md4HIBO5gApYgJvCWzjVfYDeEiIn57I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113347707795-3riolidt435tftuojqlafljjt9j77kmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

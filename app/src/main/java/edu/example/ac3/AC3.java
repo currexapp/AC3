@@ -2,6 +2,7 @@ package edu.example.ac3;
 
 // this is a test
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -13,6 +14,19 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayDeque;
 
 public class AC3 extends AppCompatActivity {
 
@@ -20,19 +34,19 @@ public class AC3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a_c3);
-
+         /*
         Intent fname_intent =getIntent();
         // Need to recheck is this is imported from user Database of Intent activity from AC1 i.e USER class from AC1
         String f_name= fname_intent.getStringExtra("FNAME");//first name of user imported from Database
-
-        TextView user_fname = findViewById(R.id.user_fname);
-        user_fname.setText("Welcome "+f_name);
+        */
+         TextView user_fname = findViewById(R.id.user_fname);
+        user_fname.setText("Welcome User");
 
         final Button logout = findViewById(R.id.logout);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AC3.this,AC6.class);//AC1 is login activity page(change AC6 to AC1)
+                Intent intent = new Intent(AC3.this,AC1.class);//AC1 is login activity page(change AC6 to AC1)
                 //check for the activity name for login activity and replace AC1.class
                  startActivity(intent);
                  recreate();// this is for the reloading of AC1 page //recheck with TA
@@ -67,7 +81,7 @@ public class AC3 extends AppCompatActivity {
         drop_down2.setAdapter(adapter1);
         final String[] drop_down2_choice = new String[1];
 
-        //final TextView check=findViewById(R.id.check);
+        final TextView check=findViewById(R.id.check);
         //check.setText(drop_down1.getSelectedItem().toString());
 
         drop_down2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -85,8 +99,6 @@ public class AC3 extends AppCompatActivity {
             }
         });
 
-        final TextView check=findViewById(R.id.check);
-        //check.setText(drop_down1.getSelectedItem().toString());
 
         final Button show_banks = findViewById(R.id.show_banks);
         show_banks.setOnClickListener(new View.OnClickListener() {
@@ -99,7 +111,7 @@ public class AC3 extends AppCompatActivity {
                 }
                 else
                 {
-                    check.setText("Please select two different currencies to convert.");
+                    Toast.makeText(getApplicationContext(),"Please select two different currencies to convert.",Toast.LENGTH_SHORT).show();
                 }
             }
         });
