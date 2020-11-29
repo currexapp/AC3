@@ -10,23 +10,25 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toTopOf="@+id/cntc_email"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45"
-        app:srcCompat="@mipmap/logo_f"
-        android:contentDescription="TODO" />
+        app:layout_constraintVertical_bias="0.197"
+        app:srcCompat="@drawable/logo_f"
+        tools:srcCompat="@drawable/logo_f" />
 
     <TextView
         android:id="@+id/cntc_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="20dp"
         android:text="currexapp@gmail.com"
         app:layout_constraintBottom_toTopOf="@+id/cntc_phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView

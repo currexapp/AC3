@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "912409456648",
+    "firebase_url": "https://ac3firebaseproject.firebaseio.com",
+    "project_id": "ac3firebaseproject",
+    "storage_bucket": "ac3firebaseproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912409456648:android:2876c3a712140326d161bd",
+        "android_client_info": {
+          "package_name": "edu.example.ac3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912409456648-14ismal19oj45loq2svk5vieffbvai8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.example.ac3",
+            "certificate_hash": "0efbf30480eb686e4715b8f995aba784396ecab8"
+          }
+        },
+        {
+          "client_id": "912409456648-29is280ud3ccu3vc9gb7b1h786cmln9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXqYp9xIHtNtntaZ0iG1COi_RxJzubQmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912409456648-29is280ud3ccu3vc9gb7b1h786cmln9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

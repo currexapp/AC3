@@ -70,10 +70,13 @@ public class AC2 extends AppCompatActivity {
                 else
                 {
                     /*TRY THIS#############################################################################################*/
-                    //registerUser(email,password);
+                    //FirebaseAuth fAuth = FirebaseAuth.getInstance();
+                    //registerUser(email,password,fAuth);
+                    //String UID = fAuth.getUid();
                     // do register user first then get his UID
                     // then push that UID into the database
                     // then in login activity get the UID from instance and call database instance using that pushed UID to get the user data
+
                     user =new HelperClass(fname,lname,email,phone,password,confirm_password);
                     reference.child(phone).setValue(user);
                     registerUser(email,password);
@@ -81,8 +84,15 @@ public class AC2 extends AppCompatActivity {
             }
 
         });
+        regtologinbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AC2.this,AC1.class);
+                startActivity(intent);
+            }
+        });
     }
-    public void registerUser(String email,String pwd)
+    public void registerUser(String email, String pwd)
     {
         fAuth.createUserWithEmailAndPassword(email,pwd).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
