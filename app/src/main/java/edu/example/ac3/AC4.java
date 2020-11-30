@@ -11,4 +11,5 @@ public class AC4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a_c4);
     }
+    //Starting AC4
 }
